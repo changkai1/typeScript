@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "ES3",
+        "watch": true,
+        "strictNullChecks": true,  // 严格的null值检测
+        "noImplicitAny": true // 隐士的any类型检测
+    },
+    "include": ["./src/**/*"]
+}
