@@ -1,2 +1,0 @@
-# typeScript
-typeScript初学

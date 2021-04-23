@@ -1,0 +1,39 @@
+一、环境搭建
+    1、安装node
+    2、npm install -g typescript
+    3、tsc -v查看版本号
+    4、编译后文件存放的地址
+        文件存放地址          编译的文件
+        tsc --outDir ./dist ./src/01_hellowTypeScript.ts
+    5、指定编译后代码版本 ( 默认情况下是ES3 )
+        tsc --outDir ./dist --target ES6 ./src/01_hellowTypeScript.ts
+    6、监听模式下运行，当文件发生改变时自动编译
+        tsc --outDir ./dist --target ES6 --watch ./src/01_hellowTypeScript.ts
+    7、编译配置文件，根目录下新建 tsconfig.json文件，运行 tsc命令即可
+        {
+            "compilerOptions": {
+                "outDir": "./dist",
+                "target": "ES3",
+                "watch": true
+            },
+            "include": ["./src/**/*"]
+        }
+    8、指定配置文件，tsconfig.json文件在config文件夹中,运行命令
+        tsc -p ./config/tsconfig.json
+        配置文件
+        {
+            "compilerOptions": {
+                "outDir": "../dist",
+                "target": "ES3",
+                "watch": true
+            },
+            "include": ["../src/**/*"]
+        }
+        
+1). 生成配置文件tsconfig.json
+    tsc --init
+2). 修改tsconfig.json配置
+    "outDir": "./js",
+    "strict": false,    
+3). 启动监视任务: 
+    终端 -> 运行任务 -> 监视tsconfig.json

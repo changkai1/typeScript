@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "outDir": "./js",
+        "target": "ES3",
+        "watch": true,
+        "strict": false,
+        "strictNullChecks": true,  // 严格的null值检测
+        "noImplicitAny": true // 隐士的any类型检测
+    },
+    "include": ["./ts/**/*"]
+}
