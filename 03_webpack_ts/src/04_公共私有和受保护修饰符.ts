@@ -9,7 +9,8 @@
     // 创建一个Person类
     class Person {
         // public name: string
-        private name: string
+        // private name: string
+        protected name: string
         public constructor(name: string) {
             this.name = name
         }
@@ -28,7 +29,10 @@
         }
         play() {
             // console.log("我喜欢玩布娃娃",this.name) // 子类中也不能访问preivate修饰的name属性
+            console.log("我喜欢玩洋娃娃",this.name) // 子类中能访问 protected 修饰的name属性
         }
     }
-
+    const stu = new Student("小明")
+    stu.play()
+    // console.log(stu.name) // 无法访问 protected 修饰的name属性
 })()
