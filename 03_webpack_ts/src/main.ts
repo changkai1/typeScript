@@ -1,7 +1,1 @@
-// import "./01_接口.ts"
-// import "./02_函数类型.ts"
-// import "./02_继承.ts"
-// import "./03_多态.ts"
-// import "./06_存取器"
-// import "./07_静态成员"
-import "./08_抽象类"
+import "./04_函数重载"
